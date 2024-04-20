@@ -134,4 +134,4 @@ const tab = new Tab(tabElement, {
       alert(id)
    }
 })
-```# Tab
+```
