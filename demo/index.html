@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Counter number</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <h1 class="title">Примеры</h1>
+
+   <section id="ex_1" class="section">
+      <h2 class="section__title">Обычное поведение</h2>
+      <div class="tab">
+         <div data-tab-controls class="tab__controls">
+            <button class="tab__control active" type="button">1</button>
+            <button class="tab__control" type="button">2</button>
+            <button class="tab__control" type="button">3</button>
+         </div>
+         <div data-tab-windows class="tab__windows">
+            <section class="tab__window">
+               <h3>Секция №1</h3>
+            </section>
+            <section class="tab__window">
+               <h3>Секция №2</h3>
+            </section>
+            <section class="tab__window">
+               <h3>Секция №3</h3>
+            </section>
+         </div>
+      </div>
+   </section>
+   <section id="ex_2" class="section">
+      <h2 class="section__title">Анимированное</h2>
+      <div data-tab-animation="300" class="tab">
+         <div data-tab-controls class="tab__controls">
+            <button class="tab__control active" type="button">1</button>
+            <button class="tab__control" type="button">2</button>
+            <button class="tab__control" type="button">3</button>
+         </div>
+         <div data-tab-windows class="tab__windows">
+            <section class="tab__window">
+               <h3>Секция №1</h3>
+            </section>
+            <section class="tab__window">
+               <h3>Секция №2</h3>
+            </section>
+            <section class="tab__window">
+               <h3>Секция №3</h3>
+            </section>
+         </div>
+      </div>
+   </section>
+   <section id="ex_3" class="section">
+      <h2 class="section__title">Медиазапрос (max,900px)</h2>
+      <div data-tab-animation data-tab-media="max,900px" class="tab">
+         <div data-tab-controls class="tab__controls">
+            <button class="tab__control active" type="button">1</button>
+            <button class="tab__control" type="button">2</button>
+            <button class="tab__control" type="button">3</button>
+         </div>
+         <div data-tab-windows class="tab__windows">
+            <section class="tab__window">
+               <h3>Секция №1</h3>
+            </section>
+            <section class="tab__window">
+               <h3>Секция №2</h3>
+            </section>
+            <section class="tab__window">
+               <h3>Секция №3</h3>
+            </section>
+         </div>
+      </div>
+   </section>
+   <section id="ex_4" class="section">
+      <h2 class="section__title">Promise</h2>
+      <div data-tab-animation="300" class="tab tab_promise">
+         <div data-tab-controls class="tab__controls">
+            <button class="tab__control active" type="button">1</button>
+            <button class="tab__control" type="button">2</button>
+            <button class="tab__control" type="button">3</button>
+         </div>
+         <div data-tab-windows class="tab__windows">
+            <section class="tab__window">
+               <h3>Секция №1</h3>
+            </section>
+            <section class="tab__window">
+               <h3>Секция №2</h3>
+            </section>
+            <section class="tab__window">
+               <h3>Секция №3</h3>
+            </section>
+         </div>
+      </div>
+   </section>
+
+
+   <script type="module" src="script.js"></script>
+</body>
+
+</html>

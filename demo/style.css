@@ -1,0 +1,90 @@
+:root {
+   --backgroundColor: #f7f7f7;
+   --accentColor: #3273ff;
+   --secondColor: #53034f;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-size: 18px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   padding-top: 30px;
+   min-width: 320px;
+
+   counter-reset: cnt;
+}
+.title {
+   text-align: center;
+}
+.title:not(:last-child),
+.section:not(:last-child) {
+   margin-bottom: 50px;
+}
+.section {
+   padding: 20px;
+   border-radius: 5px;
+   background-color: var(--backgroundColor);
+   border-radius: 15px;
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+
+   counter-increment: cnt;
+}
+.section__title::before {
+   content: "#" counter(cnt) ". ";
+}
+.section__title:not(:last-child) {
+   margin-bottom: 30px;
+}
+/* =========== */
+.tab {
+}
+.tab__controls {
+   display: flex;
+   gap: 10px;
+}
+.tab__controls:has(.tab__control) {
+   margin-bottom: 20px;
+}
+
+.tab__control {
+   flex: 1 1 auto;
+   font-size: 24px;
+   font-weight: 700;
+   text-align: center;
+   padding: 20px 15px;
+   border: none;
+   background-color: var(--secondColor);
+   color: #fff;
+   transition:
+      background-color 0.3s ease-in-out 0s,
+      color 0.3s ease-in-out 0s,
+      border-radius 0.3s ease-in-out 0s;
+}
+.tab__control.active {
+   border-radius: 10px 10px 0 0;
+}
+.tab__control:not(.active) {
+   background-color: var(--accentColor);
+   color: #000;
+}
+.active {
+}
+.tab__windows {
+}
+.tab__windows .tab__control:not(:last-of-type) {
+   margin-bottom: 10px;
+}
+.tab__windows .tab__control {
+   display: block;
+   width: 100%;
+}
+.tab__window {
+   padding: 50px 20px;
+   background-color: rgba(50, 115, 255, 0.3);
+   border-radius: 0 0 10px 10px;
+}
