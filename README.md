@@ -4,6 +4,7 @@
 
 ## Содержание
 - [Описание](#описание)
+- [Подключение](#подключение)
 - [html](#html)
 - [js](#js)
 - [Методы](#Методы)
@@ -21,6 +22,31 @@
 При переходе в спойлеры, элементы управления перемещаются в обертку окон так, чтобы за кнопкой шло его окно таба (button -> tabWindow -> button -> tabWindow -> ...).
 
 Данный скрипт дополнительно использует два вспомогательных класса: `Slide` и `Timer`. [Подробней про них](https://github.com/sulky-cat/Helpers).
+
+## Подключение
+Класс `Tab` находится в папке `/src`. Вспомогательные классы `Timer` и `Slide` тоже находятся в папке `/src`, а также [тут](https://github.com/sulky-cat/Helpers).
+
+Подключение без модульности:
+```html
+<script src="Timer.js"></script>
+<script src="Slide.js"></script>
+<script src="Tab.js"></script>
+```
+Подключение с модулями (уже написано в файлах):
+*HTML*
+```html
+<script type="module" src="script.js">
+   import Tab from "Tab.js"
+</script>
+```
+*JS (Tab.js)*
+```js
+import Slide from "./Slide.js"
+```
+*JS (Slide.js)*
+```js
+import Timer from "./Timer.js";
+```
 
 ## HTML
 ```html
