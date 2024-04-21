@@ -2,6 +2,8 @@
 
 [Демо страница](https://sulky-cat.github.io/Tab/demo/)
 
+<img align="middle" alt="tab demo" src="./tab.png">
+
 ## Содержание
 - [Описание](#описание)
 - [Подключение](#подключение)
@@ -57,9 +59,9 @@ import Timer from "./Timer.js";
       <button type="button">3</button>
    </div>
    <div data-tab-windows>
-      <section>Секция №1</section>
-      <section>Секция №2</section>
-      <section>Секция №3</section>
+      <section><h2>Секция №1</h2></section>
+      <section><h2>Секция №2</h2></section>
+      <section><h2>Секция №3</h2></section>
    </div>
 </div>
 ``` 
@@ -128,9 +130,9 @@ HTML
       <button type="button">3</button>
    </div>
    <div data-tab-windows>
-      <section>Секция №1</section>
-      <section>Секция №2</section>
-      <section>Секция №3</section>
+      <section><h2>Секция №1</h2></section>
+      <section><h2>Секция №2</h2></section>
+      <section><h2>Секция №3</h2></section>
    </div>
 </div>
 ```
