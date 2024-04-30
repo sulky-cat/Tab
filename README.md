@@ -139,11 +139,11 @@ HTML
 JS
 ```js
 const tabElement = document.querySelectorAll('.tab')
-const tab = new Tab(tabElement)
+const tabClass = new Tab(tabElement)
 
-tab.afterOpen = (id) => {
+tabClass.options.afterOpen = (id) => {
    // Создание кастомного события
-   promiseTab.tab.dispatchEvent(new CustomEvent("onOpenTab", {
+   tabClass.tab.dispatchEvent(new CustomEvent("onOpenTab", {
       detail: { tab: promiseTab, id },
       // Всплытие, чтобы увидеть на документе
       bubbles: true
