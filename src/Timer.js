@@ -6,7 +6,7 @@ export default class Timer {
     * @param   {*}         returnValue Значение, которое будет передоваться в resolve.
     * @returns {Promise}               false - если анимация запрещена в данный момент; Promise - после удачного выполнения.
     */
-   static start(func = () => { }, duration = 500, returnValue) {
+   static start({ func = () => { }, duration = 500, returnValue }) {
       return new Promise(resolve => {
          const start = new Date()
          const end = new Date().getTime() + duration
